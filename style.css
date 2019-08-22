@@ -96,6 +96,8 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
+    justify-content: center;
+    padding: 3em;
 }
 
 .aFb {
@@ -114,7 +116,13 @@ ul li a {
     text-decoration: none;
 }
 
+li {
+    justify-self: center;
+}
 
+i {
+    margin-left: 3em;
+}
 /*MAIN*/
 
 main {
