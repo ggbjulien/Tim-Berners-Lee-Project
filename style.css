@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-gap: 1em;
+    max-width: 38em;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #EBEBEB;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+
+}
+
+/*HEADER*/
+
+header {
+    grid-area: 1 / 1 / 2 / 3;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-between;
+    max-height: 35em;
+    padding: 3em 2em;
+    box-shadow: 1px 1px 1px 1px #CCCCCC;
+}
+.tblImg {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
+    border: 5px solid #CCCCCC;
+    border-radius: 600px;
+}
+
+.hH1 {
+    grid-area: 2 / 1 / 3 / 4;
+    justify-self: center;
+    align-self: start;
+    padding-top: 0.5em;
+    color: #D95555;
+    font-weight: bold;
+}
+
+.hH2 {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: center;
+    align-self: center;
+    padding-top: 2em;
+}
+
+.hP1{
+    grid-area: 3 / 1 / 4 / 4;
+    justify-self: center;
+    align-self: start;
+    text-align: justify;
+    padding: 0 2em;
+
+
+}
+.hA1 {
+    grid-area: 3 / 2 / 4 / 3;
+    justify-self: center;
+    align-self: end;
+    padding: 1em;
+    background-color: #D95555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/*ASIDE*/
+
+aside {
+    grid-area: 2 / 1 / 3 / 3;
+    box-shadow: 1px 1px 1px 1px #CCCCCC;
+}
+
+ul { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+}
+
+.aFb {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.aLk {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.aTw {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+
+/*MAIN*/
+
+main {
+    grid-area: 3 / 1 / 4 / 3;
+    box-shadow: 1px 1px 1px 1px #CCCCCC;    
+    padding: 1em;
+}
+
+.films {
+    width: 125px;
+    height: 175px;
+    padding: 1em;
+}
+
+h3 {
+    text-align: center;
+    padding: 2em;
+}
+
+main p {
+    text-align: justify;
+    padding: 1em;
+}
+/* TEST */ 
+header,
+aside,
+main {
+    background-color: white;
+    border-radius: 3px;
+}
+
